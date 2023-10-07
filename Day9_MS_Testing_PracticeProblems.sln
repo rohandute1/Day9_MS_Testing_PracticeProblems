@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day9_MS_Testing_PracticeProblems", "Day9_MS_Testing_PracticeProblems\Day9_MS_Testing_PracticeProblems.csproj", "{F568D505-9363-4B44-878B-23E879C5D26E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceProcessorUnitTest", "PriceProcessorUnitTest\PriceProcessorUnitTest.csproj", "{2FC273B2-7FE3-4311-A19F-78A091027644}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F568D505-9363-4B44-878B-23E879C5D26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F568D505-9363-4B44-878B-23E879C5D26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F568D505-9363-4B44-878B-23E879C5D26E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC273B2-7FE3-4311-A19F-78A091027644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC273B2-7FE3-4311-A19F-78A091027644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC273B2-7FE3-4311-A19F-78A091027644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC273B2-7FE3-4311-A19F-78A091027644}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
