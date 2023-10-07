@@ -98,5 +98,47 @@ namespace PriceProcessorUnitTest
             var fieldInfo = typeof(PriceProcessor).GetField("itemIndex", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
             return (Dictionary<string, int>)fieldInfo.GetValue(priceProcessor);
         }
+
+        [TestMethod]
+        public void IsEligible_WhenWordsAreAnagrams_ReturnsTrue()
+        {
+            // Arrange
+            string word1 = "listen";
+            string word2 = "silent";
+
+            // Act
+            bool result = SwapChecker.IsEligible(word1, word2);
+
+            // Assert
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void IsEligible_WhenWordsAreNotAnagrams_ReturnsFalse()
+        {
+            // Arrange
+            string word1 = "hello";
+            string word2 = "world";
+
+            // Act
+            bool result = SwapChecker.IsEligible(word1, word2);
+
+            // Assert
+            Assert.IsFalse(result);
+        }
+
+        [TestMethod]
+        public void IsEligible_WhenWordsHaveDifferentLengths_ReturnsFalse()
+        {
+            // Arrange
+            string word1 = "hello";
+            string word2 = "hell";
+
+            // Act
+            bool result = SwapChecker.IsEligible(word1, word2);
+
+            // Assert
+            Assert.IsFalse(result);
+        }
     }
 }
